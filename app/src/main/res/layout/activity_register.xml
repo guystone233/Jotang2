@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="297dp" />
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="297dp" />
+    <EditText
+        android:id="@+id/editTextTextPasswordAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password Again"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="297dp" />
+    <EditText
+        android:id="@+id/editTextSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sex"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="297dp" />
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Phone number"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="Register" />
+</LinearLayout>
