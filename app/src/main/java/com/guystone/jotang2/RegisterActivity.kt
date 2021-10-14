@@ -46,8 +46,9 @@ class RegisterActivity: AppCompatActivity() {
         editor.putString(username.text.toString(),username.text.toString())
         editor.putString(username.text.toString()+"password",password.text.toString())
         editor.putString(username.text.toString()+"sex",sex.text.toString())
-        if(phonenum.text!=null)editor.putString(username.text.toString()+"phonenumber",sex.text.toString())
+        if(phonenum.text!=null)editor.putString(username.text.toString()+"phonenumber",phonenum.text.toString())
         editor.apply()
         Toast.makeText(this, "Register complete", Toast.LENGTH_SHORT).show()
+        finish()
     }
 }

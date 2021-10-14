@@ -14,15 +14,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
     }
+
     fun reg(view: View) {
         val intent = Intent(this,RegisterActivity::class.java)
         startActivity(intent)
     }
-    fun gotofirst(){
+
+    fun gotofirst(usr: String){
         val intent = Intent(this,FirstActivity::class.java)
+        intent.putExtra("usr",usr)
         startActivity(intent)
         finish()
     }
+
     fun login(view: View) {
         val prefs = getSharedPreferences("data",Context.MODE_PRIVATE)
         val username = findViewById<EditText>(R.id.editTextUserName)
@@ -37,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
         if(prefs.getString(username.text.toString()+"password",null)==password.text.toString()){
             Toast.makeText(this, "Login!", Toast.LENGTH_SHORT).show()
-            gotofirst()
+            gotofirst(username.text.toString())
         }
         else Toast.makeText(this, "Username/Password may be wrong!", Toast.LENGTH_SHORT).show()
     }
